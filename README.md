@@ -35,7 +35,9 @@ Additional description about the project and its features.
 - React.js
 - Linters, Node.js, Git, Flexbox, Bootstrap, Webpack
 
-<!-- [Live Demo Link](https://livedemo.com) -->
+## Live demo
+
+ [Live Demo Link](https://hamzaoutdoors.github.io/math-magicians/)
 
 # Getting Started with Create React App
 
