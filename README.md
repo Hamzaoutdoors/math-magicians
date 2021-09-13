@@ -1,3 +1,42 @@
+
+<p align="center">
+  <a href="https://www.microverse.org/">
+    <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors/to-do-list/blob/development/LICENSE">
+    <img alt="MIT Licensed" src="https://img.shields.io/github/license/Hamzaoutdoors/to-do-list?style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors/math-magicians">
+    <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Hamzaoutdoors/math-magicians/dev?color=blue&style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors/math-magicians">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Hamzaoutdoors/math-magicians?color=green&label=%E2%98%85%20stars%20&style=flat-square">
+  </a>
+  <a href="https://github.com/Hamzaoutdoors">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/Hamzaoutdoors?color=yellow&logo=github&style=flat-square">
+  </a>
+</p>
+
+<div align="center">
+ <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black"/> <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white"/></div>
+
+- Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: 
+ - Make simple calculations. 
+ - Read a random math-related quote.
+
+
+![screenshot](./react-app.gif)
+
+Additional description about the project and its features.
+
+## Built With
+
+- JSX, JavaScript with ES-
+- React.js
+- Linters, Node.js, Git, Flexbox, Bootstrap, Webpack
+
+<!-- [Live Demo Link](https://livedemo.com) -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +107,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Author
+
+👤 **Ellaouzi Hamza**
+
+- GitHub: [hamzaoutdoors](https://github.com/Hamzaoutdoors)
+- LinkedIn : [Hamza Ellaouzi](https://www.linkedin.com/in/hamza-ellaouzi-137a45b8/)
+- Twitter: [Hamza Ellaouzi](https://twitter.com/EllaouziHamza)
+
+# 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Hamzaoutdoors/math-magician/issues).
+
+# Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
