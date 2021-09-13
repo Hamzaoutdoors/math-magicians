@@ -1,5 +1,6 @@
 {
   "name": "math-magicians",
+  "homepage": "https://hamzaoutdoors.github.io/math-magicians/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
