@@ -26,9 +26,16 @@
   - Make simple calculations. 
   - Read a random math-related quote.
 </br>
+ <p align="center">
+   <kbd>
+    <img alt="logo" src="https://user-images.githubusercontent.com/80895497/133352649-1b10ad25-e92d-4e5a-add2-918fc3628dd4.gif"width="250" height="250">
+   </kbd>
+</p>
+</br>
+
 <div align="center">
 <kbd>
-  <img alt="Microverse" src="https://user-images.githubusercontent.com/80895497/133344410-799c41cc-2b4a-49fd-84b5-44f8acfc9f34.png">
+  <img alt="math" src="https://user-images.githubusercontent.com/80895497/133344410-799c41cc-2b4a-49fd-84b5-44f8acfc9f34.png">
   </kbd>
   </div>
  </br>
