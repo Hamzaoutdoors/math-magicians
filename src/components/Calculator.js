@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button';
-import calculate from '../logic/calculate';
+import { calculate, displayTotal } from '../logic/calculate';
 
 const Calculator = () => {
   const [calculatorObj, setCalculatorObj] = useState({
@@ -17,37 +17,23 @@ const Calculator = () => {
     }));
   };
 
-  const buttons = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'x'], ['4', '5', '6', '-'], ['1', '2', '3', '+']].map((row) => (
+  const buttons = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'x'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']].map((row) => (
     <div className="row" key={row[0]}>
-      <Button name={row[0]} className="col" handleClick={handleClick} />
-      <Button name={row[1]} className="col" handleClick={handleClick} />
-      <Button name={row[2]} className="col" handleClick={handleClick} />
-      <Button name={row[3]} className="col operature" handleClick={handleClick} />
+      {row.length === 4 && <Button name={row[0]} className="col-3" handleClick={handleClick} />}
+      <Button name={row[(row.length === 4 ? 1 : 0)]} className={`col-${row.length === 4 ? 3 : 6}`} handleClick={handleClick} />
+      <Button name={row[(row.length === 4 ? 2 : 1)]} className="col-3" handleClick={handleClick} />
+      <Button name={row[(row.length === 4 ? 3 : 2)]} className="col-3 operature" handleClick={handleClick} />
     </div>
   ));
-  const displayTotal = () => {
-    if (total === 0 && next === null) {
-      return 0;
-    }
 
-    if (total !== 0 && total !== null) {
-      return total;
-    }
-    return '';
-  };
   return (
     <>
       <div className="calc-container">
         <form id="form">
-          <input type="text" id="result" value={(displayTotal()) + (operation || '') + (next || '')} disabled />
+          <input type="text" id="result" value={(displayTotal(total, next)) + (operation || '') + (next || '')} disabled />
         </form>
         <div className="container">
           {buttons}
-          <div className="row">
-            <Button name="0" className="col-6" handleClick={handleClick} />
-            <Button name="." className="col-3" handleClick={handleClick} />
-            <Button name="=" className="col-3 operature" handleClick={handleClick} />
-          </div>
         </div>
       </div>
     </>
