@@ -23,13 +23,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (isNumber(buttonName)) {
-    // if (buttonName === '0' && obj.next === '0') {
-    //   return {
-    //     total: null,
-    //     next: 0,
-    //   };
-    // }
-
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next) {

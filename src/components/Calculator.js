@@ -28,11 +28,22 @@ class Calculator extends Component {
         <button type="button" className="col operature" id={row[3]} name={row[3]} onClick={this.handleClick}>{row[3]}</button>
       </div>
     ));
+    const displayTotal = () => {
+      if (total === 0 && next === null) {
+        return 0;
+      }
+
+      if (total !== 0 && total !== null) {
+        return total;
+      }
+      return '';
+    };
+
     return (
       <>
         <div className="calc-container">
           <form id="form">
-            <input type="text" id="result" value={(total || 0) + (operation || '') + (next || '')} disabled />
+            <input type="text" id="result" value={(displayTotal()) + (operation || '') + (next || '')} disabled />
           </form>
           <div className="container">
             {buttons}
