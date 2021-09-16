@@ -31,11 +31,12 @@
     <img alt="logo" src="https://user-images.githubusercontent.com/80895497/133352649-1b10ad25-e92d-4e5a-add2-918fc3628dd4.gif"width="250" height="250">
    </kbd>
 </p>
+
 </br>
 
 <div align="center">
 <kbd>
-  <img alt="math" src="https://user-images.githubusercontent.com/80895497/133656124-ec9ebba5-2cda-4d7d-b544-02d8add1c6d6.png">
+  <img alt="math" src="https://user-images.githubusercontent.com/80895497/133656417-f1cb9031-8b54-4110-a4fa-a75907cab34c.png">
   </kbd>
   </div>
  </br>
