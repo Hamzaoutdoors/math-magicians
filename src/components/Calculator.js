@@ -1,31 +1,33 @@
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-import calculate from '../logic/calculate';
+import PropTypes from 'prop-types';
+import Button from './Button';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
+    this.state = {};
 
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
+    const { updateState } = this.props;
     e.preventDefault();
-    this.setState((prev) => calculate(prev, e.target.name));
+    updateState(e.target.name);
   }
 
   render() {
-    const { total, next, operation } = this.state;
+    const { calculateObj } = this.props;
+    const { total, next, operation } = calculateObj;
+
     const buttons = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'x'], ['4', '5', '6', '-'], ['1', '2', '3', '+']].map((row) => (
       <div className="row" key={row[0]}>
-        <button type="button" className="col" id={row[0]} name={row[0]} onClick={this.handleClick}>{row[0]}</button>
-        <button type="button" className="col" id={row[1]} name={row[1]} onClick={this.handleClick}>{row[1]}</button>
-        <button type="button" className="col" id={row[2]} name={row[2]} onClick={this.handleClick}>{row[2]}</button>
-        <button type="button" className="col operature" id={row[3]} name={row[3]} onClick={this.handleClick}>{row[3]}</button>
+        <Button name={row[0]} className="col" handleClick={this.handleClick} />
+        <Button name={row[1]} className="col" handleClick={this.handleClick} />
+        <Button name={row[2]} className="col" handleClick={this.handleClick} />
+        <Button name={row[3]} className="col operature" handleClick={this.handleClick} />
       </div>
     ));
     const displayTotal = () => {
@@ -34,11 +36,10 @@ class Calculator extends Component {
       }
 
       if (total !== 0 && total !== null) {
-        return total;
+        return calculateObj.total;
       }
       return '';
     };
-
     return (
       <>
         <div className="calc-container">
@@ -48,9 +49,9 @@ class Calculator extends Component {
           <div className="container">
             {buttons}
             <div className="row">
-              <button type="button" className="col-6" name="0" onClick={this.handleClick}>0</button>
-              <button type="button" className="col-3" name="." onClick={this.handleClick}>.</button>
-              <button type="button" className="col-3 operature" name="=" onClick={this.handleClick}>=</button>
+              <Button name="0" className="col-6" handleClick={this.handleClick} />
+              <Button name="." className="col-3" handleClick={this.handleClick} />
+              <Button name="=" className="col-3 operature" handleClick={this.handleClick} />
             </div>
           </div>
         </div>
@@ -61,3 +62,11 @@ class Calculator extends Component {
 }
 
 export default Calculator;
+
+Calculator.propTypes = {
+  updateState: PropTypes.func.isRequired,
+  total: PropTypes.string.isRequired,
+  next: PropTypes.string.isRequired,
+  operation: PropTypes.string.isRequired,
+  calculateObj: PropTypes.object.isRequired,
+};
