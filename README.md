@@ -24,6 +24,7 @@
  <div align="center">
   <em align="center" style>" FAIL = First Attempt In Learning.. "</em><strong> - wise man</strong>
   </div>
+  
 # Math Magicians
 
 - Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: 
