@@ -96,7 +96,7 @@ button {
   font-weight: 700;
 }
 
-.operature:hover {
+.operature:focus {
   background: var(--secondary-color);
 }
 
