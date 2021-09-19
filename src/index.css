@@ -22,11 +22,8 @@ body {
 }
 
 .logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  margin: 10px;
+  width: 80px;
+  margin: 10px 5rem 10px 10px;
 }
 
 .clock-container {
@@ -34,7 +31,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 7rem;
   left: 0;
   width: 15vw;
   margin: 10px;
