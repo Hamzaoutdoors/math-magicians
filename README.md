@@ -50,7 +50,7 @@ Additional description about the project and its features.
 ## Built With
 
 - JSX, JavaScript with ES6
-- React.js (hooks)
+- React.js class-based/functional componenet, hooks and router
 - Linters, Node.js, Git, Flexbox, Bootstrap, Webpack
 
 ## Live demo
