@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './media/logo.png';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
-import Calculator from './components/Calculator';
+import Calculate from './pages/calculate';
 import Clock from './components/Clock';
 
 const App = () => (
@@ -30,8 +30,8 @@ const App = () => (
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" d="flex">
-            <Nav className="me-auto">
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="nav-links">
               <Link to="/">Home</Link>
               <Link to="/calculator">Calculator</Link>
               <Link to="/quote">Quote</Link>
@@ -45,10 +45,9 @@ const App = () => (
       <div className="app">
         <div className="app-container">
           <Clock />
-          <h2 className="app-header">Lets do some math!</h2>
           <Switch>
             <Route path="/calculator">
-              <Calculator />
+              <Calculate />
             </Route>
             <Route path="/quote">
               <Quote />
