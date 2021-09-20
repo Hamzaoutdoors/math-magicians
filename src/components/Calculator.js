@@ -17,7 +17,7 @@ const Calculator = () => {
     }));
   };
 
-  const buttons = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'x'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']].map((row) => (
+  const buttons = [['AC', '+/-', '!', '÷'], ['7', '8', '9', 'x'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']].map((row) => (
     <div className="row" key={row[0]}>
       {row.length === 4 && <Button name={row[0]} className="col-3" handleClick={handleClick} />}
       <Button name={row[(row.length === 4 ? 1 : 0)]} className={`col-${row.length === 4 ? 3 : 6}`} handleClick={handleClick} />

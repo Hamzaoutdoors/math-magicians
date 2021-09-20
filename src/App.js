@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './media/logo.png';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
-import Calculate from './pages/calculate';
+import Calculate from './pages/Calculate';
 import Clock from './components/Clock';
 
 const App = () => (
