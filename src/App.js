@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './media/logo.png';
-import Calculator from './components/Calculator';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Quote from './pages/Quote';
+import Home from './pages/Home';
+import Calc from './pages/Calc';
 import Clock from './components/Clock';
+import NavbarComponent from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => (
   <>
-    <div className="app">
-      <img
-        src={logo}
-        alt="Logo"
-        className="logo"
-      />
-      <div className="app-container">
-        <Clock />
-        <h2 className="app-header">Lets do some math!</h2>
-        <Calculator />
+    <Router basename={process.env.PUBLIC_URL}>
+      <NavbarComponent />
+      <div className="app">
+        <div className="app-container">
+          <Clock />
+          <Switch>
+            <Route path="/calculator">
+              <Calc />
+            </Route>
+            <Route path="/quote">
+              <Quote />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+      <Footer className="flex-shrink-0 shadow d-flex align-items-center" />
+    </Router>
   </>
-
 );
 
 export default App;

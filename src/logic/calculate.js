@@ -4,6 +4,18 @@ function isNumber(item) {
   return !!item.match(/[0-9]+/);
 }
 
+/* Learn recursive function */
+
+const fact = (n) => {
+  if (n === 0) {
+    return 0;
+  }
+  if (n === 1) {
+    return 1;
+  }
+  return n * fact(n - 1);
+};
+
 /**
  * Given a button name and a calculator data object, return an updated
  * calculator data object.
@@ -92,6 +104,20 @@ const calculate = (obj, buttonName) => {
       return { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
     }
     return {};
+  }
+
+  if (buttonName === '!') {
+    try {
+      if (obj.next) {
+        return { ...obj, next: fact(parseFloat(obj.next)).toString() };
+      }
+      if (obj.total) {
+        return { ...obj, total: fact(parseFloat(obj.next)).toString() };
+      }
+      return {};
+    } catch (err) {
+      return 'Math Error';
+    }
   }
 
   // Button must be an operation
