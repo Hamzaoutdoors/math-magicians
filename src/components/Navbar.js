@@ -24,6 +24,7 @@ const NavbarComponent = () => (
           <Link to="/">Home</Link>
           <Link to="/calculator">Calculator</Link>
           <Link to="/quote">Quote</Link>
+          <Link to="/todolist">To Do</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
