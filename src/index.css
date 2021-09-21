@@ -277,7 +277,7 @@ button {
 .input-text {
   font-size: 1rem;
   font-weight: 400;
-  width: 85%;
+  width: 90%;
   padding-right: 5px;
   padding-left: 10px;
   border-radius: calc(0.5 * 100px);
