@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
-import Calculate from './pages/Calculate';
+import Calc from './pages/Calculate';
 import Clock from './components/Clock';
 import NavbarComponent from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,7 +20,7 @@ const App = () => (
           <Clock />
           <Switch>
             <Route path="/calculator">
-              <Calculate />
+              <Calc />
             </Route>
             <Route path="/quote">
               <Quote />
