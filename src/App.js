@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 const App = () => (
   <>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavbarComponent />
       <div className="app">
         <div className="app-container">
