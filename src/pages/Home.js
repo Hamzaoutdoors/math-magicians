@@ -3,7 +3,7 @@ import React from 'react';
 import homeBanner from '../media/home_banner.png';
 
 const Home = () => (
-  <div className="home-page">
+  <div className="home-page" data-testid="home">
     <h1>Welcome to our page</h1>
     <p>
       <span>S</span>

@@ -27,7 +27,7 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="calc-container">
+      <div className="calc-container" data-testid="calculator">
         <form id="form">
           <input type="text" id="result" value={(displayTotal(total, next)) + (operation || '') + (next || '')} disabled />
         </form>
