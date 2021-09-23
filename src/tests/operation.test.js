@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
 import Calculator from '../components/Calculator';
-import calculate from '../logic/calculate';
+import { calculate } from '../logic/calculate';
 import operate from '../logic/operate';
 
 beforeEach(() => {
@@ -44,39 +44,44 @@ describe('testing operations', () => {
 });
 
 describe('testing calculations', () => {
-    test('dividing two numbers', () => {
-      let obj = { total: null };
-      obj = calculate(obj, '8');
-      obj = calculate(obj, '÷');
-      obj = calculate(obj, '2');
-      obj = calculate(obj, '=');
-      expect(obj.total).toEqual('4');
-    });
-  
-    test('display nothing before operation is complete', () => {
-      let obj = { total: null };
-      obj = calculate(obj, '2');
-      obj = calculate(obj, '1');
-      obj = calculate(obj, '=');
-      expect(obj.total).toEqual(undefined);
-    });
-  
-    test('return null when user presses AC', () => {
-      let obj = { total: null };
-      obj = calculate(obj, '9');
-      obj = calculate(obj, 'AC');
-      expect(obj.total).toBeNull();
-    });
-  
-    test('return decimal number', () => {
-      let obj = { next: null };
-      obj = calculate(obj, '7');
-      obj = calculate(obj, '.');
-      obj = calculate(obj, '5');
-      expect(obj.next).toEqual('7.5');
-    });
-});
+  test('dividing two numbers', () => {
+    let obj = { total: null };
+    obj = calculate(obj, '8');
+    obj = calculate(obj, '÷');
+    obj = calculate(obj, '2');
+    obj = calculate(obj, '=');
+    expect(obj.total).toEqual('4');
+  });
 
-describe('testing calculations', () => {
+  test('dividing by 0', () => {
+    let obj = { total: null };
+    obj = calculate(obj, '8');
+    obj = calculate(obj, '÷');
+    obj = calculate(obj, '0');
+    obj = calculate(obj, '=');
+    expect(obj.total).toMatch('Math Error');
+  });
 
+  test('display nothing before operation is complete', () => {
+    let obj = { total: null };
+    obj = calculate(obj, '2');
+    obj = calculate(obj, '1');
+    obj = calculate(obj, '=');
+    expect(obj.total).toEqual(undefined);
+  });
+
+  test('return null when user presses AC', () => {
+    let obj = { total: null };
+    obj = calculate(obj, '9');
+    obj = calculate(obj, 'AC');
+    expect(obj.total).toBeFalsy();
+  });
+
+  test('return decimal number', () => {
+    let obj = { next: null };
+    obj = calculate(obj, '7');
+    obj = calculate(obj, '.');
+    obj = calculate(obj, '5');
+    expect(obj.next).toEqual('7.5');
+  });
 });

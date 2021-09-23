@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculator testing 2 x 3 1`] = `
+<button
+  class="col-3"
+  data-testid="6"
+  id="6"
+  name="6"
+  type="button"
+>
+  6
+</button>
+`;
