@@ -1,66 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages test snapshots renders correctly 1`] = `
-<nav
-  className="navbar navbar-expand-lg navbar-light bg-light"
->
-  <div
-    className="container"
-  >
-    <a
-      className="navbar-brand"
-      href="#home"
-    >
-      <img
-        alt="Logo"
-        className="logo"
-        src="logo.png"
-      />
-    </a>
-    <button
-      aria-controls="basic-navbar-nav"
-      aria-label="Toggle navigation"
-      className="navbar-toggler collapsed"
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="navbar-toggler-icon"
-      />
-    </button>
-    <div
-      aria-expanded={null}
-      className="navbar-collapse collapse"
-      id="basic-navbar-nav"
-    >
-      <div
-        className="nav-links navbar-nav"
-        onKeyDown={[Function]}
-      >
-        <a
-          href="/"
-          onClick={[Function]}
-        >
-          Home
-        </a>
-        <a
-          href="/calculator"
-          onClick={[Function]}
-        >
-          Calculator
-        </a>
-        <a
-          href="/quote"
-          onClick={[Function]}
-        >
-          Quote
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
-`;
-
 exports[`pages test snapshots testing Navbar component 1`] = `
 <nav
   className="navbar navbar-expand-lg navbar-light bg-light"
@@ -116,6 +55,12 @@ exports[`pages test snapshots testing Navbar component 1`] = `
         >
           Quote
         </a>
+        <a
+          href="/todolist"
+          onClick={[Function]}
+        >
+          To Do
+        </a>
       </div>
     </div>
   </div>
@@ -124,7 +69,7 @@ exports[`pages test snapshots testing Navbar component 1`] = `
 
 exports[`pages test snapshots testing Quote page 1`] = `
 <h2>
-  Motivational math quotes
+  Get motivated with new quote
 </h2>
 `;
 
@@ -134,6 +79,16 @@ exports[`pages test snapshots testing Quote page 2`] = `
 >
   Lets do some math!
 </h2>
+`;
+
+exports[`pages test snapshots testing To do page 1`] = `
+<input
+  class="input-text"
+  name="title"
+  placeholder="Add Todo..."
+  type="text"
+  value=""
+/>
 `;
 
 exports[`pages test snapshots testing home page 1`] = `
