@@ -4,6 +4,7 @@
 :root {
   --primary-color: #ffa500;
   --secondary-color: #ffd68a;
+  --scroll-color: #fa6800;
 }
 
 body {
@@ -31,7 +32,6 @@ nav {
 
 .nav-links {
   font-size: 1.2rem;
-  padding-left: 15rem;
   margin-right: 1rem;
 }
 
@@ -44,7 +44,8 @@ nav {
   text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
   box-shadow: 0 1px 17px 4px rgba(0, 0, 0, 0.5);
   margin-left: 40px;
-  border-radius: 10px;
+  border-radius: 50px;
+  padding: 5px 8px;
 }
 
 a:hover {
@@ -105,7 +106,7 @@ a:hover {
   box-shadow: 0 1px 17px 4px rgba(0, 0, 0, 0.75);
 }
 
-input[type="text"] {
+#form input[type="text"] {
   height: 70px;
   background: #929292;
   text-align: right;
@@ -152,6 +153,26 @@ button {
   width: 100%;
 }
 
+.btnContainer {
+  margin-top: 1rem;
+}
+
+.btnContainer button {
+  border: none;
+  outline: none;
+  margin-right: 15px;
+  padding: 0 10px;
+  height: 40px;
+  text-align: center;
+}
+
+.btnContainer a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: solid 2px #1da1f2;
+}
+
 /* Home page */
 
 .home-page {
@@ -190,6 +211,100 @@ button {
   width: 100%;
   padding-top: 0.5rem;
   font-size: 1rem;
+}
+
+/* To Do List */
+.todo-container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-inner {
+  width: 100%;
+  padding: 0 10px 4rem;
+}
+
+.todo-header {
+  background-image: url('./media/to-do-list-banner.png');
+  background-size: cover;
+  width: 100%;
+  border-radius: calc(0.5 * 100px);
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+}
+
+.sub-menu {
+  margin-top: 2rem;
+  padding: 0;
+  max-height: 36vh;
+  overflow-y: auto;
+}
+
+/* Practice changing scroll color with scrollbar */
+.sub-menu li {
+  padding-right: 0.5rem;
+}
+
+.sub-menu::-webkit-scrollbar {
+  width: 20px;
+}
+
+.sub-menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.sub-menu::-webkit-scrollbar-thumb {
+  background: var(--scroll-color);
+  border-radius: 10px;
+}
+
+.sub-menu::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.input-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 90%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.submit-icon {
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 992px) {

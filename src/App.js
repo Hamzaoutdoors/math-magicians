@@ -10,6 +10,7 @@ import Calc from './pages/Calc';
 import Clock from './components/Clock';
 import NavbarComponent from './components/Navbar';
 import Footer from './components/Footer';
+import TodoContainer from './components/toDoComponents/TodoContainer';
 
 const App = () => (
   <>
@@ -21,6 +22,9 @@ const App = () => (
           <Switch>
             <Route path="/calculator">
               <Calc />
+            </Route>
+            <Route path="/todolist">
+              <TodoContainer />
             </Route>
             <Route path="/quote">
               <Quote />
