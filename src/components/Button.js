@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ handleClick, name, className }) => (
-  <button type="button" className={className} id={name} name={name} onClick={handleClick}>{name}</button>
+  <button type="button" className={className} id={name} name={name} onClick={handleClick} data-testid={name}>{name}</button>
 );
 
 export default Button;

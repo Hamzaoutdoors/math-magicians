@@ -29,7 +29,7 @@ const App = () => (
             <Route path="/quote">
               <Quote />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
             </Route>
           </Switch>

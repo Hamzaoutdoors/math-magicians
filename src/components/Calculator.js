@@ -16,7 +16,6 @@ const Calculator = () => {
       ...calculate(prevState, e.target.name),
     }));
   };
-
   const buttons = [['AC', '+/-', '!', '÷'], ['7', '8', '9', 'x'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']].map((row) => (
     <div className="row" key={row[0]}>
       {row.length === 4 && <Button name={row[0]} className="col-3" handleClick={handleClick} />}
@@ -28,7 +27,7 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="calc-container">
+      <div className="calc-container" data-testid="calculator">
         <form id="form">
           <input type="text" id="result" value={(displayTotal(total, next)) + (operation || '') + (next || '')} disabled />
         </form>
