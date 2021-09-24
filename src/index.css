@@ -22,6 +22,7 @@ body {
   text-align: center;
   height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -291,7 +292,7 @@ button {
 .input-text {
   font-size: 1rem;
   font-weight: 400;
-  width: 90%;
+  width: 88%;
   padding-right: 5px;
   padding-left: 10px;
   border-radius: calc(0.5 * 100px);
@@ -299,6 +300,7 @@ button {
 
 .input-text::placeholder {
   color: #000;
+  padding-left: 10px;
 }
 
 .input-submit {
@@ -343,5 +345,9 @@ button {
     height: 15vh;
     top: 28vh;
     right: 0;
+  }
+
+  .todo-container {
+    min-width: 90vw;
   }
 }
