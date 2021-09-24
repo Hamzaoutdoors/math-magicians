@@ -191,13 +191,13 @@ button {
 /* Home page */
 
 .home-page {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .home-page h1 {
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
@@ -209,8 +209,8 @@ button {
 }
 
 .home-page .home-banner {
-  margin-top: 2rem;
-  width: 100%;
+  margin: 1rem auto;
+  width: 80%;
 }
 
 .home-page span {
@@ -341,10 +341,7 @@ button {
   }
 
   .calc-wrapper img {
-    width: 100vw;
-    height: 15vh;
-    top: 28vh;
-    right: 0;
+    display: none;
   }
 
   .todo-container {
