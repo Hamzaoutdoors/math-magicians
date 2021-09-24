@@ -41,7 +41,7 @@
 
 <div align="center">
 <kbd>
-  <img alt="math" src="https://user-images.githubusercontent.com/80895497/134216031-e8e7ab45-5727-463a-ac83-40d2a8657617.PNG">
+  <img alt="math" src="https://user-images.githubusercontent.com/80895497/134748890-29d5e63a-e1e4-4438-b23b-244824012a17.png">
   </kbd>
   </div>
  </br>
