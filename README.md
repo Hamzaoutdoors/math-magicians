@@ -57,7 +57,10 @@ Additional description about the project and its features.
 
 ## Live demo
 
- [Live Demo Link](https://hamzaoutdoors.github.io/math-magicians/)
+ > [Live with GitHub](https://hamzaoutdoors.github.io/math-magicians/)
+ </br>
+ 
+ > [Live with Heroku](https://hamzaoutdoors-math-magicians.herokuapp.com/)
 
 # Getting Started with Create React App
 
