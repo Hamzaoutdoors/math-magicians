@@ -56,6 +56,8 @@ Additional description about the project and its features.
 - Linters, Node.js, Git, Flexbox, Bootstrap, Webpack
 
 ## Live demo
+Live demos for this project can be found on the following Cloud Platforms :
+
 <div align="center">
  <a href="https://hamzaoutdoors-math-magicians.herokuapp.com/" width = "20%"><img alt="Heroku deployement" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"></a>    <a href="https://hamzaoutdoors-math-magicians.netlify.app/" width = "20%"><img alt="Netlify deployement" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"></a>
  </div>
