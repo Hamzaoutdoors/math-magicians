@@ -61,6 +61,9 @@ Additional description about the project and its features.
  </br>
  
  > [Live with Heroku](https://hamzaoutdoors-math-magicians.herokuapp.com/)
+ </br>
+ 
+ > [Live with Netlify](https://hamzaoutdoors-math-magicians.netlify.app/)
 
 # Getting Started with Create React App
 
