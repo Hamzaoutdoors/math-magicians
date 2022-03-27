@@ -22,7 +22,7 @@
 
 </br>
  <div align="center">
-  <em align="center" style>" FAIL = First Attempt In Learning.. "</em><strong> - wise man</strong>
+  <em align="center" style>" FAIL = First Attempt In Learning.. "</em><strong> - A Wise Man</strong>
   </div>
   
 # Math Magicians
